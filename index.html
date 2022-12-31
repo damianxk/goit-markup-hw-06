@@ -27,61 +27,59 @@
   <body>
     <!-- Menu, cała nawigacja -->
     <header class="header">
-      <div class="container">
-        <div class="header-menu">
-          <!-- Lewa strona menu header -->
-          <div class="header-menu-left">
-            <a href="index.html" class="logo-link-header">
-              <span class="logo-web">Web</span>Studio
-            </a>
-            <nav>
-              <ul class="nav-list-left">
-                <li class="nav-list-left-agencja">
-                  <a href="index.html" class="nav-links-left active">Agencja</a>
-                </li>
-                <li class="nav-list-left-portfolio">
-                  <a href="portfolio.html" class="nav-links-left">Portfolio</a>
-                </li>
-                <li class="nav-list-left-kontakt">
-                  <a href="#" class="nav-links-left">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <div class="container flex-align">
+        <!-- Lewa strona menu header -->
+        <a href="index.html" class="logo-link-header bold">
+          <span class="logo-web">Web</span>Studio
+        </a>
+        <nav class="nav-list flex">
+          <ul class="nav-list-left flex">
+            <li>
+              <a href="index.html" class="nav-links-left active">Agencja</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="nav-links-left">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links-left">Kontakt</a>
+            </li>
+          </ul>
           <!-- Prawa strona menu header -->
-          <div class="header-menu-right">
-            <ul class="nav-list-right">
-              <li class="nav-list-right-mail">
-                <a href="mailto:info@devstudio.com" class="nav-links-right">
-                  <svg class="nav-icons" width="16" height="12">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="nav-list-right-tel">
-                <a href="tel:+48111111111" class="nav-links-right">
-                  <svg class="nav-icons" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +48 111 111 111
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+          <ul class="nav-list-right flex">
+            <li>
+              <a href="mailto:info@devstudio.com" class="nav-links-right flex-align">
+                <svg class="nav-icons" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="nav-links-right flex-align">
+                <svg class="nav-icons" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- Main -->
     <main>
       <!-- Główna sekcja -->
-      <section class="index-main-section">
-        <div class="container">
+      <section class="index-main-section section">
+        <div class="container flex-column">
           <h1>
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="index-main-section-button" data-modal-open>
+          <button
+            type="button"
+            class="index-main-section-button flex-center bold border-radius"
+            data-modal-open
+          >
             Zamów usługe
           </button>
         </div>
@@ -89,9 +87,9 @@
       <!-- Sekcja Nasze atuty -->
       <section class="advantages-section section">
         <div class="container">
-          <ul class="advantages-list">
+          <ul class="advantages-list flex">
             <li class="advantages-item">
-              <div class="advantages-icon-div">
+              <div class="advantages-icon-div border-radius flex-center">
                 <svg width="70" height="70" class="advantages-icons">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -103,7 +101,7 @@
               </p>
             </li>
             <li class="advantages-item">
-              <div class="advantages-icon-div">
+              <div class="advantages-icon-div border-radius flex-center">
                 <svg width="70" height="70" class="advantages-icons">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -115,7 +113,7 @@
               </p>
             </li>
             <li class="advantages-item">
-              <div class="advantages-icon-div">
+              <div class="advantages-icon-div border-radius flex-center">
                 <svg width="70" height="70" class="advantages-icons">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -127,7 +125,7 @@
               </p>
             </li>
             <li class="advantages-item">
-              <div class="advantages-icon-div">
+              <div class="advantages-icon-div border-radius flex-center">
                 <svg width="70" height="70" class="advantages-icons">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -146,7 +144,7 @@
         <div class="what-we-do-section section">
           <div class="container">
             <h2>Czym się zajmujemy</h2>
-            <ul class="what-we-do-list">
+            <ul class="what-we-do-list flex">
               <li class="what-we-do-list-item">
                 <img
                   class="what-we-do-image"
@@ -155,7 +153,7 @@
                   width="370"
                   height="294"
                 />
-                <p class="what-we-do-overlay">Aplikacje komputerowe</p>
+                <p class="what-we-do-overlay bold">Aplikacje komputerowe</p>
               </li>
               <li class="what-we-do-list-item">
                 <img
@@ -165,7 +163,7 @@
                   width="370"
                   height="294"
                 />
-                <p class="what-we-do-overlay">Aplikacje mobilne</p>
+                <p class="what-we-do-overlay bold">Aplikacje mobilne</p>
               </li>
               <li class="what-we-do-list-item">
                 <img
@@ -175,7 +173,7 @@
                   width="370"
                   height="294"
                 />
-                <p class="what-we-do-overlay">Rozwiązania graficzne</p>
+                <p class="what-we-do-overlay bold">Rozwiązania graficzne</p>
               </li>
             </ul>
           </div>
@@ -185,7 +183,7 @@
       <section class="our-team-section section">
         <div class="container">
           <h2>Nasz zespół</h2>
-          <ul class="our-team-list">
+          <ul class="our-team-list flex">
             <li class="our-team-list-item">
               <figure class="our-team-list-figure">
                 <img
@@ -197,7 +195,7 @@
                 <figcaption class="our-team-list-info">
                   <h3>John Doe</h3>
                   <p>Product Designer</p>
-                  <ul class="our-team-social-links-list">
+                  <ul class="our-team-social-links-list flex">
                     <li>
                       <a href="#" class="our-team-social-icons">
                         <svg class="social-icon-svg" width="20" height="20">
@@ -241,7 +239,7 @@
                 <figcaption class="our-team-list-info">
                   <h3>John Doe</h3>
                   <p>Frontend Developer</p>
-                  <ul class="our-team-social-links-list">
+                  <ul class="our-team-social-links-list flex">
                     <li>
                       <a href="#" class="our-team-social-icons">
                         <svg class="social-icon-svg" width="20" height="20">
@@ -285,7 +283,7 @@
                 <figcaption class="our-team-list-info">
                   <h3>John Doe</h3>
                   <p>Marketing</p>
-                  <ul class="our-team-social-links-list">
+                  <ul class="our-team-social-links-list flex">
                     <li>
                       <a href="#" class="our-team-social-icons">
                         <svg class="social-icon-svg" width="20" height="20">
@@ -329,7 +327,7 @@
                 <figcaption class="our-team-list-info">
                   <h3>John Doe</h3>
                   <p>UI Designer</p>
-                  <ul class="our-team-social-links-list">
+                  <ul class="our-team-social-links-list flex">
                     <li>
                       <a href="#" class="our-team-social-icons">
                         <svg class="social-icon-svg" width="20" height="20">
@@ -368,44 +366,44 @@
       <section class="our-clients section">
         <div class="container">
           <h2>Nasi klienci</h2>
-          <ul class="our-clients-list">
-            <li class="our-clients-list-item">
-              <a href="#" class="our-clients-link">
+          <ul class="our-clients-list flex">
+            <li>
+              <a href="#" class="our-clients-link flex border-radius">
                 <svg class="our-clients-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-ya-co"></use>
                 </svg>
               </a>
             </li>
-            <li class="our-clients-list-item">
-              <a href="#" class="our-clients-link">
+            <li>
+              <a href="#" class="our-clients-link flex border-radius">
                 <svg class="our-clients-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-tag-line-here"></use>
                 </svg>
               </a>
             </li>
-            <li class="our-clients-list-item">
-              <a href="#" class="our-clients-link">
+            <li>
+              <a href="#" class="our-clients-link flex border-radius">
                 <svg class="our-clients-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="our-clients-list-item">
-              <a href="#" class="our-clients-link">
+            <li>
+              <a href="#" class="our-clients-link flex border-radius">
                 <svg class="our-clients-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="our-clients-list-item">
-              <a href="#" class="our-clients-link">
+            <li>
+              <a href="#" class="our-clients-link flex border-radius">
                 <svg class="our-clients-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="our-clients-list-item">
-              <a href="#" class="our-clients-link">
+            <li>
+              <a href="#" class="our-clients-link flex border-radius">
                 <svg class="our-clients-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-company-tag-line"></use>
                 </svg>
@@ -417,9 +415,11 @@
     </main>
     <!-- Stopka -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container flex">
         <div class="footer-contact">
-          <a href="index.html" class="logo-link-footer"><span class="logo-web">Web</span>Studio</a>
+          <a href="index.html" class="logo-link-footer bold"
+            ><span class="logo-web">Web</span>Studio
+          </a>
           <address>
             <ul class="footer-list">
               <li>m. Warszawa, Aleje Jerozolimskie 21</li>
@@ -433,8 +433,8 @@
           </address>
         </div>
         <div class="footer-join-us">
-          <h3 class="footer-join-us-title">DOŁĄCZ DO NAS</h3>
-          <ul class="footer-join-us-social-links-list">
+          <h3 class="footer-join-us-title bold">DOŁĄCZ DO NAS</h3>
+          <ul class="footer-join-us-social-links-list flex">
             <li>
               <a href="#" class="footer-join-us-link">
                 <svg class="social-icon-svg" width="20" height="20">
@@ -466,20 +466,20 @@
           </ul>
         </div>
         <div class="footer-newsletter">
-          <h3 class="footer-join-us-title">Zapisz się do newslettera</h3>
-          <form name="footer-newsletter-form" class="footer-newsletter-form">
+          <h3 class="footer-join-us-title bold">Zapisz się do newslettera</h3>
+          <form name="footer-newsletter-form" class="footer-newsletter-form flex">
             <label
               ><input
                 type="email"
                 name="footer-newsletter-email"
-                class="footer-newsletter-input"
+                class="footer-newsletter-input border-radius"
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="footer-newsletter-button">
+            <button type="submit" class="footer-newsletter-button flex-align border-radius bold">
               <span>Zapisz się</span>
               <svg class="footer-newsletter-icon" width="24" height="24">
-                <use href="images/icon-send.svg#icon-send"></use>
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
@@ -488,12 +488,71 @@
     </footer>
     <!-- Okno Modalne  -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-close" data-modal-close>
+      <div class="modal border-radius">
+        <button class="modal-close flex-center" data-modal-close>
           <svg class="close-svg" width="11" height="11">
-            <use href="./images/close-button.svg#close-button"></use>
+            <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
+        <h2 class="modal-title bold">Zostaw swoje dane w formularzu poniżej</h2>
+        <form name="order-form" class="modal-form flex-column">
+          <label class="modal-form-label">Imie</label>
+          <div class="input-container">
+            <input
+              type="text"
+              name="contact-name"
+              class="modal-form-input border-radius"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label">Telefon</label>
+          <div class="input-container">
+            <input
+              type="tel"
+              name="contact-phone"
+              class="modal-form-input border-radius"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/icons.svg#telephone"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label">Email</label>
+          <div class="input-container">
+            <input
+              type="email"
+              name="contact-email"
+              class="modal-form-input border-radius"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="images/icons.svg#mail"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label"
+            >Komentarz
+            <textarea
+              name="contact-comment"
+              placeholder="Wprowadź tekst"
+              class="modal-form-input border-radius modal-form-textarea"
+            ></textarea>
+          </label>
+          <label class="modal-form-check flex-center">
+            <label class="check">
+              <input class="check__input" type="checkbox" required />
+              <span class="check__box"></span>
+            </label>
+            <p class="modal-accept-text">
+              Oświadczam iż akceptuję
+              <a href="#" target="_blank" class="modal-link"> Regulamin</a> i
+              <a href="#" target="_blank" class="modal-link">Politykę Prywatności</a>.
+            </p>
+          </label>
+          <button type="submit" class="modal-form-button border-radius bold">Wyślij</button>
+        </form>
       </div>
     </div>
     <!-- Koniec Modala -->
